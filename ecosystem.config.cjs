@@ -1,5 +1,5 @@
 // PM2 config untuk server produksi @sveltejs/adapter-node.
-// Deploy: npm ci && npm run build && pm2 startOrReload ecosystem.config.cjs --env production --update-env
+// Deploy: npm ci && npm run build && pm2 startOrReload ecosystem.config.cjs --update-env
 const fs = require('node:fs');
 const path = require('node:path');
 const { parseEnv } = require('node:util');
@@ -31,16 +31,13 @@ module.exports = {
 			kill_timeout: 10000,
 
 			time: true,
+			merge_logs: true,
 			out_file: 'logs/out.log',
 			error_file: 'logs/error.log',
 
+			// Selalu production dan selalu membaca .env, dengan atau tanpa --env production.
+			// Untuk development pakai `npm run dev`, bukan PM2.
 			env: {
-				NODE_ENV: 'development',
-				HOST: '127.0.0.1',
-				PORT: 3000
-			},
-			env_production: {
-				NODE_ENV: 'production',
 				// Hanya terima koneksi lokal; publik masuk lewat reverse proxy (nginx/Caddy).
 				HOST: '127.0.0.1',
 				PORT: 4455,
