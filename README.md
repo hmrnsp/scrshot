@@ -32,6 +32,10 @@ npm run preview   # serve the production build locally
 
 Fonts (Inter and JetBrains Mono) are bundled from `@fontsource`, so the site makes no third-party requests and sets no cookies.
 
+## License
+
+[MIT](LICENSE) © 2026 scrshot contributors
+
 ## Accessibility
 
 - The demo respects `prefers-reduced-motion`. It shows the finished state instead of animating.

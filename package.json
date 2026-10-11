@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "Landing page for scrshot, the free and open-source AI-powered screenshot launcher.",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite dev",
