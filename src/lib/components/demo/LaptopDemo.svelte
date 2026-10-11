@@ -17,7 +17,7 @@
 	const STEP_LABELS = [
 		['Capture', 'Press your shortcut and drag over any part of the screen.'],
 		['Annotate', 'Mark it up with boxes, arrows, highlights, steps, notes and blur.'],
-		['AI Actions', 'scrshot recognizes what you captured and suggests the right action.'],
+		['AI Actions', 'screenshotid recognizes what you captured and suggests the right action.'],
 		['Result', 'The result appears next to your work, ready to copy or apply.']
 	];
 
@@ -309,7 +309,7 @@
 				<div class="result" class:on={ph >= P.think}>
 					<div class="r-head">
 						<span class="r-app">
-							<svg width="12" height="12" viewBox="0 0 26 26" fill="none" stroke="var(--accent)" stroke-width="3.4" stroke-linecap="square"><path d="M3 9V3h6M17 3h6v6M23 17v6h-6M9 23H3v-6" /></svg>scrshot · {f.action}
+							<svg width="12" height="12" viewBox="0 0 26 26" fill="none" stroke="var(--accent)" stroke-width="3.4" stroke-linecap="square"><path d="M3 9V3h6M17 3h6v6M23 17v6h-6M9 23H3v-6" /></svg>screenshotid · {f.action}
 						</span>
 						{#if ph >= P.done}
 							<span class="chip done">✓ Done</span>

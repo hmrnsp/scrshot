@@ -8,7 +8,7 @@
 
 <header class="header">
 	<nav class="nav container" aria-label="Main">
-		<a class="brand" href="/" aria-label="scrshot home"><Logo />scrshot</a>
+		<a class="brand" href="/" aria-label="screenshotid home"><Logo />screenshotid</a>
 		<div class="links">
 			<a class="link" href="{prefix}#features">Features</a>
 			<a class="link" href="{prefix}#how">How it works</a>

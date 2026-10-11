@@ -10,7 +10,7 @@
 	<div class="container">
 		<div class="cols">
 			<div class="about">
-				<a class="brand" href="/"><Logo size={22} />scrshot</a>
+				<a class="brand" href="/"><Logo size={22} />screenshotid</a>
 				<p>The free, open-source AI screenshot launcher for macOS and Windows.</p>
 			</div>
 			<nav aria-label="Product">
@@ -35,7 +35,7 @@
 			</nav>
 		</div>
 		<div class="bottom">
-			<span>© 2026 scrshot contributors. Free and open-source software.</span>
+			<span>© 2026 screenshotid contributors. Free and open-source software.</span>
 			<span>{SITE.domain}</span>
 		</div>
 	</div>

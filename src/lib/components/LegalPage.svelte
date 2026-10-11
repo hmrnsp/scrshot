@@ -7,10 +7,10 @@
 </script>
 
 <svelte:head>
-	<title>{title} · scrshot</title>
+	<title>{title} · screenshotid</title>
 	<meta name="description" content={description} />
 	<link rel="canonical" href="{SITE.url}{path}" />
-	<meta property="og:title" content="{title} · scrshot" />
+	<meta property="og:title" content="{title} · screenshotid" />
 	<meta property="og:description" content={description} />
 	<meta property="og:url" content="{SITE.url}{path}" />
 </svelte:head>

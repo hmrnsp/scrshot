@@ -1,4 +1,4 @@
-// The seven content types scrshot recognizes, with the data that drives the
+// The seven content types screenshotid recognizes, with the data that drives the
 // laptop demo: window chrome, annotations (in selection coordinates, 628×340),
 // launcher actions and the result panel.
 

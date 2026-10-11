@@ -9,28 +9,28 @@
 
 	const FAQS = [
 		{
-			q: 'Is scrshot really free?',
-			a: 'Yes. scrshot is free and open source, with no subscription and no account. AI actions run on your own API key, so any AI usage is billed directly by the provider you choose.'
+			q: 'Is screenshotid really free?',
+			a: 'Yes. screenshotid is free and open source, with no subscription and no account. AI actions run on your own API key, so any AI usage is billed directly by the provider you choose.'
 		},
 		{
-			q: 'Which platforms does scrshot support?',
+			q: 'Which platforms does screenshotid support?',
 			a: 'macOS and Windows. Installers for both are published on the GitHub Releases page, and the README lists the exact system requirements for each version.'
 		},
 		{
 			q: 'How is it different from a regular screenshot tool?',
-			a: 'Capture and annotation work like the tools you already know. scrshot also recognizes what you captured and offers the next step, so you do not have to open another app and explain the context.'
+			a: 'Capture and annotation work like the tools you already know. screenshotid also recognizes what you captured and offers the next step, so you do not have to open another app and explain the context.'
 		},
 		{
 			q: 'Are my screenshots sent to the cloud?',
-			a: 'Only when you run an AI action. Capturing and annotating happen on your device. When you run an action, the capture goes directly from your device to the AI provider you configured. scrshot has no servers that receive or store your captures.'
+			a: 'Only when you run an AI action. Capturing and annotating happen on your device. When you run an action, the capture goes directly from your device to the AI provider you configured. screenshotid has no servers that receive or store your captures.'
 		},
 		{
 			q: 'Are my captures used to train AI models?',
-			a: 'scrshot never collects your captures, so we cannot train on them. How your AI provider handles API requests is set by that provider’s terms, so review them before you connect a key.'
+			a: 'screenshotid never collects your captures, so we cannot train on them. How your AI provider handles API requests is set by that provider’s terms, so review them before you connect a key.'
 		},
 		{
-			q: 'Which AI models power scrshot?',
-			a: 'You choose. Add an API key for a supported provider in Settings and scrshot uses it for detection and actions. The current list of supported providers is in the README.'
+			q: 'Which AI models power screenshotid?',
+			a: 'You choose. Add an API key for a supported provider in Settings and screenshotid uses it for detection and actions. The current list of supported providers is in the README.'
 		},
 		{
 			q: 'Does it work offline?',
@@ -42,7 +42,7 @@
 		},
 		{
 			q: 'How do I report a security issue?',
-			a: 'Please report it privately through GitHub’s “Report a vulnerability” form on the scrshot repository instead of opening a public issue.'
+			a: 'Please report it privately through GitHub’s “Report a vulnerability” form on the screenshotid repository instead of opening a public issue.'
 		}
 	];
 
@@ -51,7 +51,7 @@
 	const jsonLd = JSON.stringify({
 		'@context': 'https://schema.org',
 		'@type': 'SoftwareApplication',
-		name: 'scrshot',
+		name: 'screenshotid',
 		applicationCategory: 'UtilitiesApplication',
 		operatingSystem: 'macOS, Windows',
 		description: SITE.description,
@@ -61,16 +61,16 @@
 </script>
 
 <svelte:head>
-	<title>scrshot — the screenshot tool that knows what to do next</title>
+	<title>screenshotid — the screenshot tool that knows what to do next</title>
 	<meta name="description" content={SITE.description} />
 	<link rel="canonical" href="{SITE.url}/" />
 	<meta property="og:type" content="website" />
-	<meta property="og:site_name" content="scrshot" />
-	<meta property="og:title" content="scrshot — the screenshot tool that knows what to do next" />
+	<meta property="og:site_name" content="screenshotid" />
+	<meta property="og:title" content="screenshotid — the screenshot tool that knows what to do next" />
 	<meta property="og:description" content={SITE.description} />
 	<meta property="og:url" content="{SITE.url}/" />
 	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:title" content="scrshot — the screenshot tool that knows what to do next" />
+	<meta name="twitter:title" content="screenshotid — the screenshot tool that knows what to do next" />
 	<meta name="twitter:description" content={SITE.description} />
 	{@html `<script type="application/ld+json">${jsonLd}</script>`}
 </svelte:head>
@@ -85,7 +85,7 @@
 				<p class="badge"><span class="badge-dot"></span>Free &amp; open source · AI screenshot launcher</p>
 				<h1>The screenshot tool that knows what to do next.</h1>
 				<p class="hero-lead">
-					Capture, annotate, and act. scrshot reads what's on your screen and offers the right action: debug an error,
+					Capture, annotate, and act. screenshotid reads what's on your screen and offers the right action: debug an error,
 					extract a table, turn a design into code, and more.
 				</p>
 				<div class="hero-ctas">
@@ -125,12 +125,12 @@
 					</ol>
 				</div>
 				<div class="compare-card dark">
-					<p class="eyebrow accent">WITH SCRSHOT</p>
+					<p class="eyebrow accent">WITH SCREENSHOTID</p>
 					<ol>
 						<li><span>1</span>Capture</li>
 						<li><span>2</span>Press Enter on the suggested action</li>
 					</ol>
-					<p>The context is already in the capture. scrshot reads it, so you don't have to explain it.</p>
+					<p>The context is already in the capture. screenshotid reads it, so you don't have to explain it.</p>
 				</div>
 			</div>
 		</div>
@@ -200,7 +200,7 @@
 	<section id="security" class="section dark">
 		<div class="container">
 			<p class="eyebrow">TRUST &amp; SECURITY</p>
-			<h2 class="h2">How scrshot handles your data.</h2>
+			<h2 class="h2">How screenshotid handles your data.</h2>
 			<p class="lead">Clear rules for what leaves your device and where it goes.</p>
 			<div class="trust">
 				<div class="trust-card">
@@ -215,7 +215,7 @@
 				</div>
 				<div class="trust-card">
 					<svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h14M8 6V4h6v2M6 6l1 13h8l1-13" /></svg>
-					<h3>No scrshot servers</h3>
+					<h3>No screenshotid servers</h3>
 					<p>We don't run servers that receive or store your captures, so there is nothing of yours for us to keep.</p>
 				</div>
 				<div class="trust-card">
@@ -242,7 +242,7 @@
 					<div class="price-amount">$0<span>forever</span></div>
 					<p>No plans, no paywalls, no account. Download it, connect your AI key, and use everything.</p>
 					<div class="price-ctas">
-						<a class="btn btn-accent" href={SITE.releases} rel="noopener">Download scrshot</a>
+						<a class="btn btn-accent" href={SITE.releases} rel="noopener">Download screenshotid</a>
 						<a class="btn btn-ghost" href={SITE.repo} rel="noopener">View source on GitHub</a>
 					</div>
 				</div>
@@ -316,7 +316,7 @@
 	<section id="download" class="section dark download">
 		<div class="container narrow">
 			<Logo size={44} stroke={2.4} />
-			<h2 class="h2 center">Take your first screenshot with scrshot.</h2>
+			<h2 class="h2 center">Take your first screenshot with screenshotid.</h2>
 			<p class="lead center">Install it, press the shortcut, and see which action it suggests.</p>
 			<div class="hero-ctas">
 				<a class="btn btn-accent" href={SITE.releases} rel="noopener">
