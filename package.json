@@ -5,10 +5,14 @@
   "description": "Landing page for scrshot, the free and open-source AI-powered screenshot launcher.",
   "license": "MIT",
   "type": "module",
+  "imports": {
+    "#lib/*": "./src/lib/*"
+  },
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
+    "start": "node build",
     "check": "svelte-kit sync && svelte-check --threshold warning"
   },
   "dependencies": {
@@ -16,15 +20,15 @@
     "@fontsource/jetbrains-mono": "5.3.0"
   },
   "devDependencies": {
-    "@sveltejs/adapter-static": "3.0.10",
-    "@sveltejs/kit": "2.70.3",
-    "@sveltejs/vite-plugin-svelte": "6.2.4",
+    "@sveltejs/adapter-node": "6.0.0",
+    "@sveltejs/kit": "3.0.0",
+    "@sveltejs/vite-plugin-svelte": "7.3.1",
     "svelte": "5.57.2",
     "svelte-check": "4.7.6",
-    "typescript": "5.9.3",
-    "vite": "7.3.7"
+    "typescript": "6.0.3",
+    "vite": "8.3.4"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=22.17"
   }
 }

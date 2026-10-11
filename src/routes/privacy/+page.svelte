@@ -1,6 +1,6 @@
 <script>
-	import LegalPage from '$lib/components/LegalPage.svelte';
-	import { SITE } from '$lib/site.js';
+	import LegalPage from '#lib/components/LegalPage.svelte';
+	import { SITE } from '#lib/site.js';
 </script>
 
 <LegalPage
@@ -43,7 +43,7 @@
 	<p>
 		Installers and source code are hosted on GitHub. When you download a release, open an issue or contribute, GitHub
 		processes your data under the
-		<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub Privacy Statement</a>.
+		<a href="#" rel="noopener">GitHub Privacy Statement</a>.
 	</p>
 
 	<h2>5. Your choices and rights</h2>

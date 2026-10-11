@@ -1,7 +1,7 @@
 <script>
 	import SiteHeader from './SiteHeader.svelte';
 	import SiteFooter from './SiteFooter.svelte';
-	import { SITE } from '$lib/site.js';
+	import { SITE } from '#lib/site.js';
 
 	let { title, description, path, updated, children } = $props();
 </script>

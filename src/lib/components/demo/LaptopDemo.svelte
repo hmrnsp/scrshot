@@ -1,8 +1,8 @@
 <script>
 	import { untrack } from 'svelte';
-	import { FEATURES, annotationSequence } from '$lib/features.js';
-	import { ICONS, TOOL_ORDER } from '$lib/icons.js';
-	import { demo } from '$lib/demo.svelte.js';
+	import { FEATURES, annotationSequence } from '#lib/features.js';
+	import { ICONS, TOOL_ORDER } from '#lib/icons.js';
+	import { demo } from '#lib/demo.svelte.js';
 	import AppScreen from './AppScreen.svelte';
 
 	// The laptop is drawn at a fixed 1200×740 and scaled to fit its container.

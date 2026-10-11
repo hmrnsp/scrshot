@@ -1,6 +1,6 @@
 <script>
-	import LegalPage from '$lib/components/LegalPage.svelte';
-	import { SITE } from '$lib/site.js';
+	import LegalPage from '#lib/components/LegalPage.svelte';
+	import { SITE } from '#lib/site.js';
 </script>
 
 <LegalPage

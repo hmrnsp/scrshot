@@ -1,6 +1,6 @@
 <script>
 	import Logo from './Logo.svelte';
-	import { SITE } from '$lib/site.js';
+	import { SITE } from '#lib/site.js';
 
 	let { home = true } = $props();
 	const prefix = $derived(home ? '' : '/');

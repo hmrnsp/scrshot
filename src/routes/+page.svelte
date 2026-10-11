@@ -1,11 +1,11 @@
 <script>
-	import SiteHeader from '$lib/components/SiteHeader.svelte';
-	import SiteFooter from '$lib/components/SiteFooter.svelte';
-	import Logo from '$lib/components/Logo.svelte';
-	import LaptopDemo from '$lib/components/demo/LaptopDemo.svelte';
-	import { FEATURES } from '$lib/features.js';
-	import { showFeature } from '$lib/demo.svelte.js';
-	import { SITE } from '$lib/site.js';
+	import SiteHeader from '#lib/components/SiteHeader.svelte';
+	import SiteFooter from '#lib/components/SiteFooter.svelte';
+	import Logo from '#lib/components/Logo.svelte';
+	import LaptopDemo from '#lib/components/demo/LaptopDemo.svelte';
+	import { FEATURES } from '#lib/features.js';
+	import { showFeature } from '#lib/demo.svelte.js';
+	import { SITE } from '#lib/site.js';
 
 	const FAQS = [
 		{
@@ -325,7 +325,7 @@
 				</a>
 				<a class="btn btn-ghost" href={SITE.releases} rel="noopener">Download for Windows</a>
 			</div>
-			<p class="hero-note">Free and open source · <a href={SITE.repo} rel="noopener">github.com/hmrnsp/scrshot</a></p>
+			<p class="hero-note">Free and open source · <a href={SITE.repo} rel="noopener">View source code</a></p>
 		</div>
 	</section>
 </main>
