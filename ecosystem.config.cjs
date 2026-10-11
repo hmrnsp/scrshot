@@ -1,5 +1,15 @@
 // PM2 config untuk server produksi @sveltejs/adapter-node.
-// Deploy: npm ci && npm run build && pm2 startOrReload ecosystem.config.cjs --env production
+// Deploy: npm ci && npm run build && pm2 startOrReload ecosystem.config.cjs --env production --update-env
+const fs = require('node:fs');
+const path = require('node:path');
+const { parseEnv } = require('node:util');
+
+// Baca file .env bila ada; isinya menimpa nilai bawaan di bawah.
+function loadEnv(file) {
+	const full = path.join(__dirname, file);
+	return fs.existsSync(full) ? parseEnv(fs.readFileSync(full, 'utf8')) : {};
+}
+
 module.exports = {
 	apps: [
 		{
@@ -39,7 +49,9 @@ module.exports = {
 				XFF_DEPTH: 1,
 				// Harus lebih kecil dari kill_timeout (dalam detik).
 				SHUTDOWN_TIMEOUT: 8,
-				BODY_SIZE_LIMIT: '512K'
+				BODY_SIZE_LIMIT: '512K',
+				...loadEnv('.env'),
+				NODE_ENV: 'production'
 			}
 		}
 	]
