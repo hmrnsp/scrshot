@@ -7,9 +7,8 @@ module.exports = {
 			script: 'build/index.js',
 			cwd: __dirname,
 
-			// Cluster mode: memakai semua inti CPU dan `pm2 reload` tanpa downtime.
-			exec_mode: 'cluster',
-			instances: 2,
+			exec_mode: 'fork',
+			instances: 1,
 
 			autorestart: true,
 			watch: false,
@@ -22,7 +21,6 @@ module.exports = {
 			kill_timeout: 10000,
 
 			time: true,
-			merge_logs: true,
 			out_file: 'logs/out.log',
 			error_file: 'logs/error.log',
 
@@ -35,7 +33,7 @@ module.exports = {
 				NODE_ENV: 'production',
 				// Hanya terima koneksi lokal; publik masuk lewat reverse proxy (nginx/Caddy).
 				HOST: '127.0.0.1',
-				PORT: 3000,
+				PORT: 4455,
 				// Ambil IP asli pengunjung dari header reverse proxy.
 				ADDRESS_HEADER: 'x-forwarded-for',
 				XFF_DEPTH: 1,
